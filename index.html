@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="app.css" />
+    <!-- Font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Gowun+Dodum&family=Happy+Monkey&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <div class="tarih">10.01.2025</div>
+        <button class="datebtn">
+          <i class="fa-regular fa-calendar-days" id="dateId"></i>
+        </button>
+
+        <!-- <input type="datetime"> -->
+        
+      </div>
+      
+      <div class="h1box"><h1>Todo List &#127826;</h1> </div>
+      
+
+      <div class="input-container">
+        
+        <input
+          type="text"
+          placeholder=" create to-do list... "
+          id="todoInput"
+        />
+        <button class="addBtn">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <ul id="todoList">
+        <!-- Todo öğeleri buraya js ile dinamik olarak eklenecek -->
+        <!-- <li><span></span>
+            <button> </button>
+            <button> </button>
+            <button> </button>
+        </li> -->
+      </ul>
+      <div id="completed-count"></div>
+    
+    </div>
+    
+
+    <script src="app.js"></script>
+  </body>
+</html>
